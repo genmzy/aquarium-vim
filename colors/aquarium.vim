@@ -58,11 +58,12 @@ call s:hi("Underline", "", "", "", "", "underline", "")
 "+-+-+-+-+-+-+-+-+-+-+
 "+----- Editor ------+
 "+-+-+-+-+-+-+-+-+-+-+
+"call s:hi("Normal", s:colors.fg, s:colors.normal, "NONE", "NONE", "", "")
 call s:hi("Normal", s:colors.gui05, s:colors.normal, "NONE", "NONE", "", "")
 call s:hi("Error", s:colors.gui08, s:colors.gui01, "", "", "italic", "")
-call s:hi("Search", s:colors.gui0A, s:colors.gui02, "", "", "", "") " Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+call s:hi("Search", s:colors.gui01, s:colors.gui02, "", "", "", "") " Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
 call s:hi("MatchParen", s:colors.gui0C, s:colors.gui02, "", "", "", "")
-call s:hi("NonText", s:colors.gui05, s:colors.gui02, "", "", "", "")
+call s:hi("NonText", s:colors.gui05, "NONE", "", "", "", "")
 call s:hi("Special", s:colors.gui0A, "", "", "", "italic", "")
 call s:hi("SpecialKey", s:colors.gui02, "", "", "", "", "")
 call s:hi("Conceal", "", s:colors.gui03, "", "NONE", "", "") " placeholder characters substituted for concealed text (see 'conceallevel')
@@ -74,9 +75,9 @@ call s:hi("SpecialComment", s:colors.gui02, "", "", "", "italic", "")
 
 " Pmenu
 call s:hi("Pmenu", s:colors.gui05, s:colors.gui01, "", "", "", "")
-call s:hi("PmenuSbar",  s:colors.gui05, s:colors.gui01, "", "", "", "")
-call s:hi("PmenuSel", s:colors.gui0C, s:colors.gui01, "", "", "", "")
-call s:hi("PmenuThumb", s:colors.gui0C, s:colors.gui01, "", "", "", "")
+call s:hi("PmenuSel", s:colors.gui0C, s:colors.gui06, "", "", "", "")
+call s:hi("PmenuSbar",  "", s:colors.gui01, "", "", "", "")
+call s:hi("PmenuThumb", "", s:colors.gui07, "", "", "", "")
 
 " Columns
 call s:hi("SignColumn", s:colors.gui0D, s:colors.sign_col, "NONE", "", "", "")
@@ -799,3 +800,26 @@ if has('nvim')
 
 end
 
+
+"+----------------------+
+"+ FZF Hightlight
+"+----------------------+
+let g:fzf_colors = {
+      \ 'fg':      ['fg', 'Normal'],
+      \ 'bg':      ['bg', 'Normal'],
+      \ 'hl':      ['fg', 'Green'],
+      \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+      \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+      \ 'hl+':     ['fg', 'Aqua'],
+      \ 'info':    ['fg', 'Aqua'],
+      \ 'prompt':  ['fg', 'Orange'],
+      \ 'pointer': ['fg', 'Blue'],
+      \ 'marker':  ['fg', 'Yellow'],
+      \ 'spinner': ['fg', 'Yellow'],
+      \ 'header':  ['fg', 'Grey']
+      \ }
+
+"+----------------------+
+"+ Floaterm Hightlight
+"+----------------------+
+hi link FloatermBorder SpecialKey

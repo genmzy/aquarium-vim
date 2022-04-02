@@ -3,8 +3,12 @@ function aquarium#colors#definitions()
   let l:result = {}
 
   if l:style ==# 'dark'
+    "fg is never used now, replace it as normal or not
+    "call s:hi("PmenuSbar",  s:colors.gui04, s:colors.gui06, "", "", "", "")
+    "call s:hi("PmenuSel", s:colors.gui04, s:colors.gui06, "", "", "", "")
     let l:result =
           \{
+          \ 'fg'   : "#98a3cf",
           \ 'gui00': "#20202A",
           \ 'gui01': "#2C2E3E",
           \ 'gui02': "#A7B7D6",
