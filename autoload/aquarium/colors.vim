@@ -4,8 +4,6 @@ function aquarium#colors#definitions()
 
   if l:style ==# 'dark'
     "fg is never used now, replace it as normal or not
-    "call s:hi("PmenuSbar",  s:colors.gui04, s:colors.gui06, "", "", "", "")
-    "call s:hi("PmenuSel", s:colors.gui04, s:colors.gui06, "", "", "", "")
     let l:result =
           \{
           \ 'fg'   : "#98a3cf",

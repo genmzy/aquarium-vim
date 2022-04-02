@@ -823,3 +823,25 @@ let g:fzf_colors = {
 "+ Floaterm Hightlight
 "+----------------------+
 hi link FloatermBorder SpecialKey
+
+
+"+----------------------+
+"+ Coc.nvim Hightlight
+"+----------------------+
+" floats
+call s:hi("CocErrorFloat", s:colors.gui08, "", "", "", "", "")
+call s:hi("CocWarningFloat", s:colors.gui09, "", "", "", "", "")
+call s:hi("CocInfoFloat", s:colors.gui0C, "", "", "", "", "")
+call s:hi("CocHintFloat", s:colors.gui0B, "", "", "", "", "")
+" signs
+call s:hi("CocErrorSign", s:colors.gui08, "", "", "", "", "")
+call s:hi("CocWarningSign", s:colors.gui09, "", "", "", "", "")
+call s:hi("CocInfoSign", s:colors.gui0C, "", "", "", "", "")
+call s:hi("CocHintSign", s:colors.gui0B, "", "", "", "", "")
+" virtuals
+call s:hi("CocErrorVirtualText", s:colors.gui08, "", "", "", "", "")
+call s:hi("CocWarningVirtualText", s:colors.gui09, "", "", "", "", "")
+call s:hi("CocInfoVirtualText", s:colors.gui0C, "", "", "", "", "")
+call s:hi("CocHintVirtualText", s:colors.gui0B, "", "", "", "", "")
+call s:hi("CocHighlightText", s:colors.gui05, s:colors.gui01, "", "", "", "")
+call s:hi("CocCodeLens", s:colors.gui03, "", "", "", "", "")
