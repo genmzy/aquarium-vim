@@ -111,6 +111,7 @@ call s:hi("Todo", s:colors.gui0E, s:colors.gui01, "", "", s:colors.bold, "") " a
 call s:hi("Boolean", s:colors.gui09, "", "", "", "", "") " a boolean constant: TRUE, false
 call s:hi("Type", s:colors.gui0A, "", "", "", "italic", "" ) " int, long, char, etc.
 call s:hi("Function", s:colors.gui0C, "", "", "", "italic", "") " a floating point constant: 2.3e10
+call s:hi("Title", s:colors.gui0C, "", "", "", s:colors.bold, "")
 call s:hi("Include", s:colors.gui0D, "", "", "", "", "" ) " preprocessor #include
 call s:hi("Statement", s:colors.gui0D, "", "", "", "", "" ) " any statement
 call s:hi("Conditional", s:colors.gui0C, "", "", "", "", "") " if, then, else, endif, switch, etc.
