@@ -77,7 +77,7 @@ call s:hi("SpecialComment", s:colors.gui02, "", "", "", "italic", "")
 call s:hi("Pmenu", s:colors.gui05, s:colors.gui01, "", "", "", "")
 call s:hi("PmenuSel", s:colors.gui0C, s:colors.gui06, "", "", "", "")
 call s:hi("PmenuSbar",  "", s:colors.gui01, "", "", "", "")
-call s:hi("PmenuThumb", "", s:colors.gui07, "", "", "", "")
+call s:hi("PmenuThumb", "", s:colors.gui0C, "", "", "", "")
 
 " Columns
 call s:hi("SignColumn", s:colors.gui0D, s:colors.sign_col, "NONE", "", "", "")
