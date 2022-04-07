@@ -344,7 +344,6 @@ call s:hi("texRefZone", s:colors.gui0D, "", "", "", "", "" )
 "+-------------------+
 call s:hi("goDeclaration", s:colors.gui0E, "", "", "", "", "")
 call s:hi("goBuiltins", s:colors.gui0C, "", "", "", "", "")
-call s:hi("goFunctionCall", s:colors.gui0D, "", "", "", "", "")
 call s:hi("goVarDefs", s:colors.gui08, "", "", "", "", "")
 call s:hi("goVarAssign", s:colors.gui08, "", "", "", "", "")
 call s:hi("goVar", s:colors.gui0E, "", "", "", "", "")
