@@ -185,7 +185,7 @@ hi! link asciidocURL markdownLinkText
 call s:hi("EndOfBuffer", s:colors.buff, "", "", "", "", "")
 call s:hi("ErrorMsg", s:colors.gui08, s:colors.gui00, "", "", "italic", "")
 call s:hi("ModeMsg", s:colors.gui05, "", "", "", "", "")
-call s:hi("MoreMsg", s:colors.gui0C, s:colors.gui02, "", "", "", "")
+call s:hi("MoreMsg", s:colors.gui01, s:colors.gui02, "", "", "", "")
 call s:hi("Question", s:colors.gui05, "", "NONE", "", "", "")
 
 
