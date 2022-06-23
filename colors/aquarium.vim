@@ -769,7 +769,7 @@ if has('nvim')
     hi! link TSTypeBuiltin TypeBuiltin
     hi! link TSUnderline Underlined
     hi! link TSURI URL
-    hi! link TSVariable Variable
+    hi! link TSVariable Noraml
     hi! link TSVariableBuiltin TreeSitterVariable
 
     " NvimTree
@@ -845,3 +845,6 @@ call s:hi("CocInfoVirtualText", s:colors.gui0C, "", "", "", "", "")
 call s:hi("CocHintVirtualText", s:colors.gui0B, "", "", "", "", "")
 call s:hi("CocHighlightText", s:colors.gui05, s:colors.gui01, "", "", "", "")
 call s:hi("CocCodeLens", s:colors.gui03, "", "", "", "", "")
+call s:hi("CocSearch", s:colors.gui05, "", "", "", s:colors.bold, "")
+call s:hi("CocPumShortcut", s:colors.gui03, "", "", "", "", "")
+call s:hi("CocPumVirtualText", s:colors.gui03, "", "", "", "", "")
